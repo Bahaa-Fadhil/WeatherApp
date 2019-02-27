@@ -9,6 +9,7 @@ Application task is to displays the weather for Enonic offices in Oslo , London 
 First, you must register at http://openweathermap.org/API . Follow the instructions on the page to get a API-key.
 
 If you want to test the project clone project or download and run it on any local server.
+
 Add your client ID where you find "var APIKey = 'WIRTE YOUR API-KEY HERE'; // YOU MOST USE YOUR OWN API-KEY IN THE APPLICATION, ELSE SHOULD NOT WORK !
 
 ```javascript
