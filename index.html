@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="moment.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Weather App</title>
+    <div id="header">Weather App</div>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container"> <!-- All thing will be inside the countainer-->
+            <div class="header"><h1></h1></div>
+            <div class="weatherbox"> <!-- All weather info will be inside here-->
+                <div class="locationbox">
+                    <div class="locactioninfobox">
+                        <div class="cityarea">
+                            <h2 id="cityname"></h2>
+                        </div>
+                        <div class="countryarea">
+                            <h3 id="state"></h3>
+                            <h3 id="country"></h3>
+                        </div>
+                    </div>
+                    <div class="dropdownlocation">
+                        <div class="dropdown"> <!-- selector for dropdown menu-->
+                            <span tabindex="0" onclick="return true">
+                                <i class="fa fa-globe" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i>
+                            </span>
+                            <div tabindex="0" onclick="return true"></div>
+                            <ul id="CitiesMenu"> <!-- Selecting city from menu in JS -->
+                                <li onclick="getLocation();"><a href="#">My Current Location</a></li>
+                                <li class="divider"></li>
+                                <li class="dropdown-header">Enonic Office in:</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="mainline"><hr></div>
+                <div class="temperaturearea">
+                    <div class="toptempbox">
+                        <div class="tempbox">
+                            <span id="temp"></span>
+                        </div>
+                        <div class="wconditionsbox">
+                            <span id="wparameter"></span>
+                            <span id="wdescription"></span><!-- Weather description-->
+                        </div>
+                    </div>
+                    <div class="weather main-toggle"> <!-- Begin Unit Switch between C & F -->
+                        <span>F</span>
+                        <button id="unit-switch"><span id="unit-toggle"></span></button>
+                        <span>C</span>
+                    </div>
+                    <div class="timer"> <!-- class  timer presenting current date for the location-->
+                        <span id="timer"></span>
+                        <span id="localTime"></span><!-- presenting local time with refreashing button-->
+                        <a id="refreshButton" onclick="history.go(0)" ><i class="fa fa-refresh fa-fw" aria-hidden="false">Refresh</i></a>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- A simple footer-->
+<footer>&copy; Bahaa Fadhil 2019</footer> 
+</html>

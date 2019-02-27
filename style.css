@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+body {
+  position: relative;
+  background-image: url("Photo/OsloView.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+}
+html, body{
+  height:100%;
+  margin: 0;
+  background-color: #007aae;
+}
+.wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.container {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 35%;
+  min-width: 300px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 3px;
+  border: 3px solid #009688;
+  box-shadow: 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12), 0 5px 5px -3px rgba(0,0,0,.2);
+}
+.header h1 {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+  color: #000000;
+}
+#header {
+  width: 100%;
+	height: 30px;
+  background-color: #007aae;
+  padding: 40px 20px 20px 20px;
+  position: relative;
+  font-size: 40px;
+	color: #fff;
+	text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  text-align: center;
+}
+.weatherbox {
+  text-align: center;
+}
+.locationbox {
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content:  center;
+  -webkit-justify-content: space-between;
+  justify-content: space-betwee;
+  padding: 10px 20px 0px;
+}
+.locactioninfobox {
+  text-align: left;
+}
+.cityarea h2 {
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 3em;
+  margin: 0;
+}
+.countryarea {
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  margin: 0 auto;
+  text-align: left;
+}
+.countryarea h3 {
+  margin: 0 0 10px 4px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  color: #000000;
+}
+.countryarea h3:first-child {
+  margin-right: 4px;
+}
+.dropdownlocation {
+  -webkit-align-self: center;
+  align-self: center;
+}
+.dropdown {
+  position: relative;
+  font-size: 16px;
+  color: #FFF;
+}
+.dropdown-header {
+  display: block;
+  padding: 3px 20px;
+  font-size: 12px;
+  font-weight: bold; 
+  line-height: 1.42857143;
+  color: #777;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+.dropdown > span {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.dropdown span {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #0097e6;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  font-size: 22px;
+}
+.dropdown span .fa {
+  display: inline;
+}
+.dropdown span .fa-globe {
+  margin-right: 15px;
+}
+.dropdown > span,
+.dropdown > div {
+  cursor: pointer;
+  outline: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.dropdown > div {
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+.dropdown > span:focus ~ div {
+  display: block;
+}
+.dropdown > ul {
+  position: absolute;
+  list-style: none;
+  text-align: left;
+  min-width: 160px;
+  z-index: 1;
+  visibility: hidden;
+  transition: visibility 0.5s;
+  opacity: 0;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  text-align: left;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+.dropdown > span:focus ~ ul {
+  visibility: visible;
+  opacity: 1;
+}
+ul li{
+  background-color: #fff;
+  color: #4FB9A7;
+  margin-bottom: 1px;
+  cursor: pointer;
+}
+ul li a {
+  padding: 8px 20px;
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+ul li a:hover{
+  background-color: #00a8ff;
+  color: #FFF;
+}
+ul .divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+.mainline hr {
+  border: 0;
+  height: 1px;
+  background: #000000;
+  opacity: 0.2;
+}
+.temperaturearea {
+  padding: 0px 20px 10px;
+}
+.toptempbox {
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content:center;
+}
+.tempbox {
+  -webkit-flex-basis: 180px;
+  flex-basis:180px;
+}
+.temperaturearea span#temp {
+  position: relative;
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12em;
+}
+.temperaturearea #temp:after {
+    content: '';
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    top: 16px;
+    right: -17px;
+    border: 3px solid #000000;
+    border-radius: 50%;
+}
+.wconditionsbox {
+  -webkit-align-self: flex-end;
+  align-self: flex-end;
+  padding-bottom: 35px;
+  padding-left: 5px;
+  -webkit-flex-basis: 100px;
+  flex-basis:100px;
+}
+.wconditionsbox span {
+  display: block;
+  text-align: left;
+}
+#wparameter {
+  font-size: 3.5em;
+}
+#wdescription {
+  font-size: 1em;
+}
+#wparameter, #wdescription {
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+}
+.weather > span {
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  color: #000000;
+}
+.weather > span:before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 0px;
+  height: 3px;
+  width: 3px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+}
+.main-toggle span {
+  margin: 0 0 0 16px;
+}
+.main-toggle span:last-child {
+  margin-left: 11px;
+}
+.weather button {
+  background: #6bbf6b;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  width: 45px;
+  height: 20px;
+  margin: 5px 5px 0;
+  cursor: pointer;
+  position: relative;
+  transition: background .2s;
+}
+.weather button:active {
+	background: #67b567;
+	}
+.weather #unit-toggle {
+  position: absolute;
+  display: inline-block;
+  left: -8px;
+  top: 2px;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50%;
+  transition: left .2s;
+}
+.timer > span{
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #000000;
+}
+.timer #refreshButton{
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #000000;
+} 
+footer{
+  width: 100%;
+	height: 40px;
+  background-color: #007aae;
+  padding: 40px 20px 20px 20px;
+  position: relative;
+  font-size: 16px;
+	color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  text-align: center;
+}
+#unit-toggle.toggle {
+	left: 16px;
+}
+@media screen and (max-width: 479px) {
+  .container {
+  width: 85%;
+  min-width: 300px;
+}
+}
+@media screen and (min-width: 480px) and (max-width: 900px) {
+  .container {
+  width: 65%;
+  min-width: 300px;
+  }
+}
