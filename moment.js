@@ -16,7 +16,7 @@ $(document).ready(function() {
     var APIKey = '***********YOUR API-KEY HERE********'; // YOU MOST USE YOUR OWN API-KEY IN THE APPLICATION, ELSE SHOULD NOT WORK !
     var URL = 'https://api.openweathermap.org/data/2.5/weather?'; // Sending request to open weather API
   
-  // info for the Enonic offices in those cities:
+  // Cities info:
     var mainCities = {
       'Oslo': {
         'region': 'Oslo',
