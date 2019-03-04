@@ -1,6 +1,6 @@
 # WeatherApp
 
-Application task is to displays the weather for Enonic offices in Oslo , London and Minsk using http://openweathermap.org/API services.
+Application task is to displays the weather for Oslo , London and Minsk city using http://openweathermap.org/API services.
 
 
 
@@ -39,5 +39,5 @@ Bahaa Al-Bayati <<www.bahaa.no>>
 
 
 ### Changelog
-* 1.0.0 Application version
+* 1.0.1 Application version
 
