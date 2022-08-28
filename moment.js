@@ -13,10 +13,10 @@ $(document).ready(function() {
     var currentCity;
     var currentRegion;
     var currentCountry;
-    var APIKey = '***********YOUR API-KEY HERE********'; // YOU MOST USE YOUR OWN API-KEY IN THE APPLICATION, ELSE SHOULD NOT WORK !
+    var APIKey = '904015a0dc5bc0dc9907b892184cdc01'; // YOU MOST USE YOUR OWN API-KEY IN THE APPLICATION, ELSE SHOULD NOT WORK !
     var URL = 'https://api.openweathermap.org/data/2.5/weather?'; // Sending request to open weather API
   
-  // Cities info:
+  // cities info:
     var mainCities = {
       'Oslo': {
         'region': 'Oslo',
