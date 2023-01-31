@@ -2,6 +2,11 @@
 
 Application task is to displays the weather for Oslo , London and Minsk city using http://openweathermap.org/API services.
 
+### Live Preview
+####  The easiest way to see the application on demo here:
+1) https://bahaa-fadhil.github.io/WeatherApp/
+
+2) [https://codepen.io/Bahaa_Albayati/full/bZNxNY](https://codepen.io/Bahaa_Albayati/full/bZNxNY)
 
 
 ### Getting Started
@@ -19,8 +24,6 @@ Add your client ID where you find "var APIKey = 'WIRTE YOUR API-KEY HERE'; // YO
 ```
 NB! some "fetch" does not work properly due to security between local server and HTTPS request. For example, it fails to retrieve icons
 
-####  The easiest way to see the application on demo here:
-* [https://codepen.io/Bahaa_Albayati/full/bZNxNY](https://codepen.io/Bahaa_Albayati/full/bZNxNY)
 
 ### Git
 * [https://github.com/Bahaa-Fadhil/WeatherApp](https://github.com/Bahaa-Fadhil/WeatherApp)
